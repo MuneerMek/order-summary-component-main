@@ -26,7 +26,10 @@ dd {
   margin-block-end: 0;
 }
 
-figure {
+figure,
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -133,6 +136,31 @@ body {
   padding: 2rem;
 }
 
+h1 {
+  font-size: 1.6rem;
+  color: var(--clr-neutral-700);
+}
+.main-flex-group p {
+  margin: 1rem 0;
+  color: var(--clr-neutral-200);
+}
+
 .purchase-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
   background: var(--clr-neutral-100);
+  border-radius: 1rem;
+}
+.purchase-plan span {
+  height: fit-content;
+}
+
+.purchase-plan p {
+  margin: 0;
+}
+
+.purchase-plan figure {
+  width: auto;
 }
