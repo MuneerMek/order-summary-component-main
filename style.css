@@ -98,11 +98,11 @@ textarea:not([rows]) {
 /* Root styles */
 
 :root {
-  --clr-primary-100: hsl(225, 100%, 94%);
-  --clr-primary-400: hsl(245, 75%, 52%);
-  --clr-neutral-100: hsl(225, 100%, 98%);
-  --clr-neutral-200: hsl(224, 23%, 55%);
-  --clr-neutral-700: hsl(223, 47%, 23%);
+  --clr-primary-100: 225, 100%, 94%;
+  --clr-primary-400: 245, 75%, 52%;
+  --clr-neutral-100: 225, 100%, 98%;
+  --clr-neutral-200: 224, 23%, 55%;
+  --clr-neutral-700: 223, 47%, 23%;
 }
 
 /* General */
@@ -113,7 +113,7 @@ html {
 }
 
 body {
-  background: var(--clr-primary-100);
+  background: hsl(var(--clr-primary-100));
   display: grid;
   place-items: center;
   text-align: center;
@@ -139,11 +139,12 @@ body {
 
 h1 {
   font-size: 1.6rem;
-  color: var(--clr-neutral-700);
+  padding-top: 1rem;
+  color: hsl(var(--clr-neutral-700));
 }
 .main-flex-group p {
   margin: 1.5rem 0;
-  color: var(--clr-neutral-200);
+  color: hsl(var(--clr-neutral-200));
 }
 
 .purchase-plan {
@@ -151,12 +152,12 @@ h1 {
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
-  background: var(--clr-neutral-100);
+  background: hsl(var(--clr-neutral-100));
   border-radius: 1rem;
 }
 
 .purchase-plan span a {
-  color: var(--clr-primary-400);
+  color: hsl(var(--clr-primary-400));
 }
 
 .purchase-plan span a:hover {
@@ -170,7 +171,7 @@ h1 {
 
 .purchase-plan figure {
   width: auto;
-  flex-shrink: 0;
+  flex-shrink: 0.2;
 }
 
 .flex-group {
@@ -180,7 +181,7 @@ h1 {
 }
 
 .flex-group:nth-child(2) {
-  padding-right: 15%;
+  padding-right: 25%;
   line-height: 1;
   gap: 0.4rem;
 }
@@ -196,12 +197,13 @@ h1 {
 .button {
   border-radius: 0.5rem;
   border: none;
-  background-color: var(--clr-primary-400);
-  color: var(--clr-neutral-100);
+  background-color: hsl(var(--clr-primary-400));
+  color: hsl(var(--clr-neutral-100));
   padding: 0.8rem;
   width: 80%;
   font-weight: 900;
   cursor: pointer;
+  box-shadow: 0 0.75rem 1rem hsl(var(--clr-primary-400), 0.2);
 }
 
 .button:hover {
@@ -209,13 +211,12 @@ h1 {
 }
 
 .cancel {
-  margin: 0;
-  color: var(--clr-neutral-200);
+  margin: 1.5rem 0 3rem 0;
+  color: hsl(var(--clr-neutral-200));
   font-weight: 700;
-  padding: 1.5rem 0;
   cursor: pointer;
 }
 
 .cancel:hover {
-  color: var(--clr-neutral-700);
+  color: hsl(var(--clr-neutral-700));
 }
