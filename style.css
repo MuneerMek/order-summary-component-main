@@ -120,6 +120,7 @@ body {
 }
 
 .wrapper {
+  max-width: 28.125rem;
   display: flex;
   flex-flow: column;
   width: 85%;
@@ -153,8 +154,14 @@ h1 {
   background: var(--clr-neutral-100);
   border-radius: 1rem;
 }
-.purchase-plan span {
-  height: fit-content;
+
+.purchase-plan span a {
+  color: var(--clr-primary-400);
+}
+
+.purchase-plan span a:hover {
+  text-decoration: none;
+  opacity: 0.75;
 }
 
 .purchase-plan p {
@@ -197,10 +204,18 @@ h1 {
   cursor: pointer;
 }
 
+.button:hover {
+  opacity: 0.75;
+}
+
 .cancel {
   margin: 0;
   color: var(--clr-neutral-200);
   font-weight: 700;
   padding: 1.5rem 0;
   cursor: pointer;
+}
+
+.cancel:hover {
+  color: var(--clr-neutral-700);
 }
