@@ -113,7 +113,8 @@ html {
 }
 
 body {
-  background: url('images/pattern-background-mobile.svg') no-repeat hsl(var(--clr-primary-100));
+  background: url("images/pattern-background-mobile.svg") no-repeat
+    hsl(var(--clr-primary-100));
   display: grid;
   place-items: center;
   text-align: center;
@@ -224,6 +225,8 @@ h1 {
 
 @media screen and (min-width: 376px) {
   body {
-    background: url('images/pattern-background-desktop.svg') no-repeat hsl(var(--clr-primary-100));
+    background: url("images/pattern-background-desktop.svg") no-repeat
+      hsl(var(--clr-primary-100));
+    background-size: contain;
   }
 }
